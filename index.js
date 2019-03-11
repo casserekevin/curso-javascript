@@ -1,9 +1,5 @@
-document.write("Curso Javascript - Aula 2<br>")
+document.write("Curso Javascript - Aula 3<br>")
 
-var canal = `Curso`;
-var ano = 2019;
-var num = 10;
+const canal = `Curso`;
 
-var texto=`${canal}<br>${ano + num}`
-
-document.write(texto);
+document.write(canal);
