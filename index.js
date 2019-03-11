@@ -1,5 +1,7 @@
-document.write("Curso Javascript - Aula 3<br>")
+document.write("Curso Javascript - Aula 4<br>")
 
-const canal = `Curso`;
+var canal = `Cursos`
+var curso = `Curso de Javascript`
+const separador = ` - ` 
 
-document.write(canal);
+alert(`${canal + separador + curso}`)
