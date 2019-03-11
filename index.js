@@ -1,10 +1,9 @@
-document.write("Curso Javascript - Aula 1<br>")
+document.write("Curso Javascript - Aula 2<br>")
 
-document.write("texto<br>")
-document.write(`${10}<br>`)
-document.write(`${10 + 2}<br>`)
+var canal = `Curso`;
+var ano = 2019;
+var num = 10;
 
-var multilineString = `<div style="color:#f00">${10} ${10 + 2} A string <br>on multiple lines</div>`
+var texto=`${canal}<br>${ano + num}`
 
-document.write(multilineString)
-document.write("Curso de<br>Javascript")
+document.write(texto);
