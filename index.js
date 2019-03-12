@@ -1,11 +1,22 @@
-document.write("Curso Javascript - Aula 8<br>")
+document.write("Curso Javascript - Aula 9<br>")
 
-var pontos = 72
-var energia = 30
+var nota = 11
+var res
 
-if(((pontos >= 30 && pontos <= 40) || (pontos >= 70 && pontos <= 80)) && energia >= 40){
-	document.write("Ganhou")
+if(nota >= 95){
+	res = "Aprovado com louvor";
+}
+else if(nota >= 60){
+	res = "Aprovado"
+}
+else if(nota >= 40){
+	res = "Recuperação"
+}
+else if(nota >= 20){
+	res = "Reprovado"
 }
 else{
-	document.write("Perdeu")
+	res = "Reprovado com louvor"
 }
+
+document.write(res)
