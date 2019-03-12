@@ -1,18 +1,11 @@
-document.write("Curso Javascript - Aula 7<br>")
+document.write("Curso Javascript - Aula 8<br>")
 
-var v1, v2, txt1, txt2
+var pontos = 72
+var energia = 30
 
-v1 = 10
-v2 = 10
-
-txt1 = "Cursos"
-txt2 = "Curso de Javascript"
-
-if(v1 == v2){
-	document.write(txt1)
-	alert(txt1)
+if(((pontos >= 30 && pontos <= 40) || (pontos >= 70 && pontos <= 80)) && energia >= 40){
+	document.write("Ganhou")
 }
 else{
-	document.write(txt2)
-	alert(txt2)
+	document.write("Perdeu")
 }
