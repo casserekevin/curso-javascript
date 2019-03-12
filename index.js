@@ -1,9 +1,5 @@
-document.write("Curso Javascript - Aula 5<br>")
+document.write("Curso Javascript - Aula 6<br>")
 
-var canal = `Cursos`
-var curso = `Curso de Javascript`
-const separador = ` - ` 
-
-var nome = prompt("Digite se nome:", "nome aqui")
-
-alert(nome);
+var nome = prompt("Digite se nome", "nome aqui")
+var res = confirm(`${nome} dejesa continuar?`)
+alert(res)
