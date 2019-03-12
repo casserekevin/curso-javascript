@@ -1,22 +1,33 @@
-document.write("Curso Javascript - Aula 9<br>")
+document.write("Curso Javascript - Aula 10<br>")
 
-var nota = 11
+var nota = 15
 var res
 
-if(nota >= 95){
-	res = "Aprovado com louvor";
-}
-else if(nota >= 60){
+if(nota >= 60){
 	res = "Aprovado"
+	if(nota >= 95){
+		if(nota == 100){
+			res += " com excelência"
+		}
+		else{
+			res += " com louvor"
+		}
+	}
+	else{
+		res += " com nota normal"
+	}
 }
 else if(nota >= 40){
 	res = "Recuperação"
 }
-else if(nota >= 20){
-	res = "Reprovado"
-}
 else{
-	res = "Reprovado com louvor"
+	res = "Reprovado"
+	if(nota >= 20){
+		res += " por nota baixa"
+	}
+	else{
+		res += " com louvor"
+	}
 }
 
 document.write(res)
