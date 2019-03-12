@@ -1,12 +1,44 @@
-document.write("Curso Javascript - Aula 11<br>")
+document.write("Curso Javascript - Aula 12<br><br>")
 
-var num = 15
-var res
+var pos, msg, pontos
 
-if(num > 10)
-	res = "Maior que 10"
-else
-	res = "Menos que 10"
+pontos = 500
 
-document.write(res)
-alert(res)
+if(pontos >= 1000){
+	pos = 1
+}
+else if(pontos >= 800){
+	pos = 2
+}
+else if(pontos >= 600){
+	pos = 3
+}
+else{
+	pos = 0
+}
+
+switch(pos){
+	case 1:
+		msg = "Primeiro Lugar<br>Medalha de Ouro"
+		break
+	case 2:
+		msg = "Segundo Lugar<br>Medalha de Prata"
+		break
+	case 3:
+		msg = "Terceiro Lugar<br>Medalha de Bronze"
+		break
+	default:
+		msg = "Não foi ao pódio<br>Não obteve medalha"	
+}
+
+switch(pos){
+	case 1:
+	case 2:
+	case 3:
+		msg += "<br>Subiu ao pódio"
+		break
+	default:
+		msg += "<br>Não obtenção colocação"	
+}
+
+document.write(msg)
