@@ -1,13 +1,21 @@
-document.write("Curso Javascript - Aula 13<br><br>")
+document.write("Curso Javascript - Aula 14<br><br>")
 
 // let array = new Array()
-let itens = ["Faca", "Pederneira", "Corda", "Lanterna", "Luvas", "Chave de fenda", "Arame"]
 let mochila = []
 
-mochila.push(5)
-mochila.push(0)
-mochila.push(3)
+mochila.push("Faca")
+mochila.push("Corda")
+mochila.push("Pederneira")
+mochila.push("Chave")
+mochila.push("Lanterna")
+mochila.push("Pedra")
 
-document.write(`${itens[mochila[0]]}<br>`)
-document.write(`${itens[mochila[1]]}<br>`)
-document.write(`${itens[mochila[2]]}<br>`)
+mochila.splice(1,1)
+mochila.splice(2,1)
+
+document.write(`${mochila[0]}<br>`)
+document.write(`${mochila[1]}<br>`)
+document.write(`${mochila[2]}<br>`)
+document.write(`${mochila[3]}<br>`)
+document.write(`${mochila[4]}<br>`)
+document.write(`${mochila[5]}<br>`)
