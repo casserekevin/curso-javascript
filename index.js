@@ -1,32 +1,18 @@
-document.write("Curso Javascript - Aula 15<br><br>")
+document.write("Curso Javascript - Aula 16<br><br>")
 
-// let array = new Array()
 let mochila = []
-let mochila1 = []
-let mochila2 = []
 
-mochila1.push("Faca")
-mochila1.push("Corda")
-mochila1.push("Pederneira")
-mochila1.push("Chave")
-mochila1.push("Lanterna")
-mochila1.push("Pedra")
-mochila1.push("Mouse")
+let item1 = ["Corda", 2]
+let item2 = ["Faca", 1]
+let item3 = ["Cura", 5]
+let item4 = ["Prego", 35]
 
-mochila2.push("Arame")
-mochila2.push("Luvas")
-mochila2.push("Joelheira")
-mochila2.push("Meias")
-mochila2.push("Moeda")
-mochila2.push("Canivete")
+mochila.push(item1)
+mochila.push(item2)
+mochila.push(item3)
+mochila.push(item4)
 
-mochila1.pop()
-
-mochila = mochila1.concat(mochila2)
-
-document.write(`${mochila.join('<br>')}<br>`)
-
-document.write(`Tamanho da mochila 1: ${mochila1.length}<br>`)
-document.write(`Tamanho da mochila 2: ${mochila2.length}<br>`)
-document.write(`Tamanho da mochila: ${mochila.length}<br>`)
-
+document.write(`${mochila[0][0]} - ${mochila[0][1]}<br>`)
+document.write(`${mochila[1][0]} - ${mochila[1][1]}<br>`)
+document.write(`${mochila[2][0]} - ${mochila[2][1]}<br>`)
+document.write(`${mochila[3][0]} - ${mochila[3][1]}<br>`)
