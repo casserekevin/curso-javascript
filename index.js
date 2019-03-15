@@ -1,10 +1,29 @@
-document.write("Curso Javascript - Aula 18<br><br>")
+document.write("Curso Javascript - Aula 19<br><br>")
 
-let mochila = [["Corda", 1], ["Cura", 10], ["Lanterna", 1], ["Pilhas", 20]]
+let num
+let cont
 
-for(let l = 0; l < 4; l++){
-	for(let c = 0; c < 2; c++){
-		document.write(`${mochila[l][c]} `)
+num = 0
+while(num < 10){
+	document.write(`${num}<br>`)
+	num++
+}
+	
+document.write("<hr>")
+
+num = 10
+while(num--){
+	document.write(`${num}<br>`)
+}	
+	
+document.write("<hr>")
+
+num = true
+cont = 0
+while(num){
+	document.write(`${cont}<br>`)
+	cont++
+	if(cont >= 10){
+		num = false
 	}
-	document.write("<br>")
 }
