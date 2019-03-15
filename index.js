@@ -1,9 +1,10 @@
-document.write("Curso Javascript - Aula 17<br><br>")
+document.write("Curso Javascript - Aula 18<br><br>")
 
-let num = 10
+let mochila = [["Corda", 1], ["Cura", 10], ["Lanterna", 1], ["Pilhas", 20]]
 
-num *= -1
-
-document.write(-num)
-document.write("<br>")
-document.write(num) 
+for(let l = 0; l < 4; l++){
+	for(let c = 0; c < 2; c++){
+		document.write(`${mochila[l][c]} `)
+	}
+	document.write("<br>")
+}
